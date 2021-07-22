@@ -1,0 +1,11 @@
+[package]
+name = "mdf"
+version = "0.1.0"
+authors = ["Robin Ole Heinemann <robin.ole.heinemann@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+byteorder = "*"
+bitflags = "*"
+derivative = "*"
+bitvec = "*"
