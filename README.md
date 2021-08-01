@@ -38,3 +38,17 @@ Included are additionally three examples:
 1. `lob_dumper` scans the whole database for rows entries stored as LOB data and dumps them into files.
 2. `p_min_len_dumper` performs a basic for of data recovery by using the `p_min_len` field of `Page`s to associate each `Page` in the database with its corresponding `Table`.
 3. `sharepoint_dump` dumps all files stored in a sharepoint database to disk, extracting the names / paths from the `AllDocs` table and their content from `AllDocStreams`.
+
+## Why not `oxidized-mdf`?
+I was very delighted to find a existing implementation of a `mdf` file format parser at https://gitlab.com/schrieveslaach/oxidized-mdf, however in the end
+I decided to implement a version myself due to multiple reasons:
+1. `oxidized-mdf` contains multiple subtle errors, finding them all might be hard
+2. `oxidized-mdf` is unsuitable for larger than memory files as is
+3. implementing a async interface as `oxidized-mdf` strives do to is hard while supporting larger than memory files
+
+## References
+The documentation of the `mdf` format from the following sources was used:
+[1] https://github.com/improvedk/OrcaMDF
+[2] https://www.sqlskills.com/blogs/paul/category/inside-the-storage-engine/
+[3] http://www.kazamiya.net/en/mssql_4n6-01
+[4] https://gitlab.com/schrieveslaach/oxidized-mdf
