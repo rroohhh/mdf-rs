@@ -9,3 +9,15 @@ byteorder = "*"
 bitflags = "*"
 derivative = "*"
 bitvec = "*"
+chrono = "*"
+encoding_rs = "*"
+pretty-hex = "*"
+log = "*"
+uuid = "*"
+serde = "*"
+
+[dev-dependencies]
+mtf = { version = "*", path = "../" }
+env_logger = "*"
+failure = "*"
+bincode = "*"
