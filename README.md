@@ -48,7 +48,11 @@ I decided to implement a version myself due to multiple reasons:
 
 ## References
 The documentation of the `mdf` format from the following sources was used:
+
 [1] https://github.com/improvedk/OrcaMDF
+
 [2] https://www.sqlskills.com/blogs/paul/category/inside-the-storage-engine/
+
 [3] http://www.kazamiya.net/en/mssql_4n6-01
+
 [4] https://gitlab.com/schrieveslaach/oxidized-mdf
